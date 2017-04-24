@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Check-in</title>
+		<link rel="stylesheet" href="./css/schedule.css">
+	</head>
+	<body>
+	<div id="sidenav">
+		<a href="home.html"><div class="linkbox"><h3>home</h3></div></a>
+		<a href="Schedule.html"><div class="linkbox"><h3>Schedule</h3></div></a>
+		<a href="login.html"><div class="linkbox"><h3>log out</h3></div></a>
+	</div>
+
+	<div id="content" class="sidenav_sit1">
+		<header>
+			<img onclick="sidenav()" class="nav2 hide" src="./img/ic_arrow_back_white_24dp/ios/ic_arrow_back_white.imageset/ic_arrow_back_white_2x.png">
+			<img onclick="sidenav()" class="nav1" src="./img/ic_menu_white_24dp/ios/ic_menu_white.imageset/ic_menu_white_2x.png">
+			<h1>Schedule</h1>
+		</header>
+		<div class="desktopnav">
+		<a href="./home.html" class="com"> Home </a>
+		<a href="./schedule.html" class="com"> Schedule </a>
+		<a href="./login.html" class="com"> Log out </a>
+		</div>
+		<div class="week">
+			<p class="blue mon" onclick="weekday(this)">Mon</p>
+			<p class="tue" onclick="weekday(this)">Tue</p>
+			<p class="wed" onclick="weekday(this)">Wed</p>
+			<p class="thur" onclick="weekday(this)">Thur</p>
+			<p class="fri" onclick="weekday(this)">Fri</p>
+			<p class="sat" onclick="weekday(this)">Sat</p>
+			<p class="sun" onclick="weekday(this)">Sun</p>
+		</div>
+		<div class="schedule">
+			<div class="monday weekdayschedule">
+				<p>Monday</p>
+				<div class="block attended">
+					<div class="info">
+						<h4>Grännsnittdesign<h4>
+						<h4>Sal 123<h4>
+					</div>
+					<div class="time">
+						<p>10:30</p>
+						<p>11:30</p>
+					</div>
+				</div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="block attended">
+					<div class="info">
+						<h4>Mattematik 4<h4>
+						<h4>Sal 345<h4>
+					</div>
+					<div class="time">
+						<p>11:45</p>
+						<p>12:45</p>
+					</div>
+				</div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="block not_attended">
+					<div class="info">
+						<h4>Mentorstid<h4>
+						<h4>Sal 420<h4>
+					</div>
+					<div class="time">
+						<p>13:30</p>
+						<p>14:30</p>
+					</div>
+				</div>
+			</div>
+			<div class="tuesday hide weekdayschedule">
+				<p>Tuesday</p>
+				<div class="block attended">
+					<div class="margin"></div>
+					<div class="margin"></div>
+					<div class="margin"></div>
+					<div class="margin"></div>
+					<div class="info">
+						<h4>Fysik 1<h4>
+						<h4>Sal 1337<h4>
+					</div>
+					<div class="time">
+						<p>10:30</p>
+						<p>11:30</p>
+					</div>
+				</div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="block attended" style="height: 150px;">
+					<div class="info">
+						<h4>Programmering<h4>
+						<h4>Sal 69<h4>
+					</div>
+					<div class="time">
+						<p>11:45</p>
+						<p>13:15</p>
+					</div>
+				</div>
+				<div class="border-bottom"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="block attended">
+					<div class="info">
+						<h4>Kemi<h4>
+						<h4>Sal 1234<h4>
+					</div>
+					<div class="time">
+						<p>12:15</p>
+						<p>13:15</p>
+					</div>
+				</div>
+			</div>
+			<div class="wednesday hide weekdayschedule">
+				<p>Wednesday</p>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="block attended" style="height: 125px;">
+					<div class="info">
+						<h4>Mattematik 4<h4>
+						<h4>Sal 323<h4>
+					</div>
+					<div class="time">
+						<p>12:30</p>
+						<p>13:50</p>
+					</div>
+				</div>
+				<div class="margin"></div>
+				<div class="block attended">
+					<div class="info">
+						<h4>Svenska 2<h4>
+						<h4>Sal 345<h4>
+					</div>
+					<div class="time">
+						<p>14:00</p>
+						<p>15:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="thursday hide weekdayschedule">
+				<p>Thursday</p>
+				<div class="margin"></div>
+				<div class="block not_attended" style="height: 80px; margin-top: -30px;">
+					<div class="info">
+						<h4>Engelska<h4>
+						<h4>Sal 123<h4>
+					</div>
+					<div class="time">
+						<p>9:30</p>
+						<p>10:15</p>
+					</div>
+				</div>
+				<div class="margin"></div>
+				<div class="block not_attended" style="height: 125px;">
+					<div class="info">
+						<h4>Mattematik 4<h4>
+						<h4>Sal 345<h4>
+					</div>
+					<div class="time">
+						<p>10:30</p>
+						<p>11:45</p>
+					</div>
+				</div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="margin"></div>
+				<div class="block not_attended">
+					<div class="info">
+						<h4>Idrott<h4>
+						<h4>Sal 420<h4>
+					</div>
+					<div class="time">
+						<p>12:30</p>
+						<p>13:30</p>
+					</div>
+				</div>
+			</div>
+			<div class="friday hide weekdayschedule">
+				<p>Friday</p>
+				<div onclick="popup()" class="lana block attending" style="height: 200px;">
+					<div class="info">
+						<h4>3 timmars redovisning om valar<h4>
+					</div>
+					<div class="time">
+						<p>11:00</p>
+						<p>14:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="saturday hide weekdayschedule">
+				<p>Saturday</p>
+			</div>
+			<div class="sunday hide weekdayschedule">
+				<p>Sunday</p>
+			</div>
+		</div>
+	</div>
+	<div onclick="close_sidenav()" id="dimblack">
+	</div>
+	<div onclick="cancel()" class="popupblack">
+	</div>
+	<div class="popup hide">
+		<a href="./culmination.href">
+		<h1>3 timmars redovisning om valar</h1>
+		<h1>ITG</h1>
+		<h2>11:00 - 14:00</h2>
+		<textarea placeholder="Leave a comment" class="comment" id="commentarea"></textarea>
+		<div class="inputs">
+			<h2 onclick="no()" style="color: #95989A"> Not present</h2>
+			<h2 onclick="yes()"> Present </h2>
+		</div>
+	</div>
+	<div class="addpopup hide">
+		<label for="name">Name</label>	
+		<input type="name">
+		<label for="time">Date</label>	
+		<input type="date">
+		<label for="time">Time</label>	
+		<input type="time">
+		<textarea placeholder="Attendaces" class="comment" id="commentarea"></textarea>
+		<div class="inputs">
+			<h2 onclick="cancel()" style="color: #95989A"> Not attending</h2>
+			<h2 onclick="cancel()"> Attending </h2>
+		</div>
+	</div>
+	</body>
+	<script src="./js/helpmeplz.js"></script>
+</html>

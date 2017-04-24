@@ -1,0 +1,203 @@
+/* computer */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+body{
+	margin: 0;
+}
+
+.sidenav{
+  display: none;
+}
+header{
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	height: 12.5vh;
+	width: 100vw;
+	background-color: #D21010;
+}
+.nav1{
+ display: none;
+}
+.nav2{
+	display: none;
+}
+h1{
+	margin-left: 1vw;
+	font-family: sans-serif;
+	color: white;
+	margin-top: 4vh;
+	font-size: 40px;	
+}
+.desktopnav{
+	height: 5vh;
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+}
+.com {
+	margin-top: 1vh;
+	font-family: sans-serif;
+	margin-left: 2vw;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.com:hover, .com:active{
+font-size: 20px;
+transition: 0.2s;
+
+}
+.minibody{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+input{
+	margin-top: 20vh;
+	width:10vw;
+	height: 3vh;
+}
+.enter{
+	margin-top: 3vh;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
+}
+.enter:hover, .enter:active{
+	font-size: 20px;
+	transition: 0.2s;
+}
+}
+/* iphone 6 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+html, body {
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	background-color: #D21010;
+	width: 100vw;
+	height: 8vh;
+	justify-content: space-between;
+	box-shadow: 0px 1px 15px 0px #1c2024;
+}
+h1{
+	font-family: sans-serif;
+	color: white;
+	margin-right: 145px;
+	margin-bottom: 25px;
+}
+.desktopnav {
+	display: none !important;
+}
+.searcshadow {
+	display: none;
+}
+.sidenav {
+	width: 80vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: white;
+}
+
+.sidenav_sit1 {
+	margin-right: 20vw;
+}
+
+.sidenav_sit3 {
+	animation: slideback .5s 1;
+	animation-fill-mode: forwards;
+}
+
+.sidenav_sit2 {
+	animation: slideforward .5s 1;
+	animation-fill-mode: forwards;
+}
+
+.visible {
+	display: none;
+}
+
+@keyframes slideforward {
+	0% {margin-right: 20vw;}
+	100% {margin-right: -80vw;}
+}
+@keyframes slideback {
+	0% {margin-right: -80vw;}
+	100% {margin-right: 20vw;}
+}
+	
+}
+h2{
+	font-size: 18px;
+	font-family: sans-serif;
+	color: white;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.maymay{
+	width: 24px;
+	height: 24px;	
+}
+
+;
+}
+.jobbig{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: none;
+	text-decoration: none;
+	color: black;
+}
+.sidenav a {
+	display: flex;
+	flex-direction: row;
+	width: 200px;
+	height: 40px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	margin-top: 50px;
+	margin-left: 15px;
+}
+.minibody{
+	display:flex;
+	flex-direction: column;
+}
+input{
+width: 200px;
+margin-left: 80px;
+margin-top: 50px;
+}
+.enter{
+	text-decoration: none;
+	color: white;
+	background-color: #D21010;
+	font-family: sans-serif;
+	width: 100px;
+	text-align: center;
+	margin-left: 125px;
+	margin-top: 20px;
+	border-radius: 25px;
+}
+}
